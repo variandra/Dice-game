@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+        background-color: chocolate;
+}
+.forms{
+    display: flex;
+    align-items: center;
+}
+.formLabels{
+    flex-direction: row;
+    
+}
+label{
+    display: inline-block;
+    height: 20px;
+    margin: 10px;
+}
+.formInputs{
+    flex-direction: row;
+}
+input{
+    height: 20px;
+    margin: 10px;
+    width: 250px;
+}
+button{
+   height: 25px;
+   margin: 20px;
+}
+.totals{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+}
+.hidden{
+    display: none;
+}
+#allDice{
+    display: none;
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+}
+.d4,.d6,.d8,.d10,.d12,.d20{
+    border: 1px solid black;
+    padding: 10px;
+    width: 16%;
+
+}

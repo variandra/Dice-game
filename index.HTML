@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎲 Dice Game 🎲</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="forms">
+        <div class="formLabels">
+            <label for="numberOfd4">Number of d4:</label><br>
+            <label for="numberOfd6">Number of d6:</label><br>
+            <label for="numberOfd8">Number of d8:</label><br>
+            <label for="numberOfd10">Number of d10:</label><br>
+            <label for="numberOfd12">Number of d12:</label><br>
+            <label for="numberOfd20">Number of d20:</label><br>
+        </div>
+        <div class="formInputs">
+            <input type="number" id="numberOfd4" data-diceSides="4" placeholder="How many d4 are we rolling?" min="0"><br>
+            <input type="number" id="numberOfd6" data-diceSides="6" placeholder="How many d6 are we rolling?" min="0"><br>
+            <input type="number" id="numberOfd8" data-diceSides="8" placeholder="How many d8 are we rolling?" min="0"><br>
+            <input type="number" id="numberOfd10" data-diceSides="10" placeholder="How many d10 are we rolling?" min="0"><br>
+            <input type="number" id="numberOfd12" data-diceSides="12" placeholder="How many d12 are we rolling?" min="0"><br>
+            <input type="number" id="numberOfd20" data-diceSides="20" placeholder="How many d20 are we rolling?" min="0"><br>
+        </div><br>
+
+        <button id="roll">ROLL 'EM</button>
+        <button class="hidden" id="showResultsButton">Show All the Rolls</button>
+        <button class="hidden" id="clear">Clear all data</button>
+    </div>
+    
+    <h1>Totals:</h1>
+    <div class="totals">
+    
+        <div class="d4"  >The Total of all the D4:<br/> <span id="d4total"  ></span></div>
+        <div class="d6"  >The Total of all the D6:<br/> <span id="d6total"  ></span></div>
+        <div class="d8"  >The Total of all the D8:<br/> <span id="d8total"  ></span></div>
+        <div class="d10" >The Total of all the D10:<br/><span  id="d10total"></span></div>
+        <div class="d12" >The Total of all the D12:<br/><span  id="d12total"></span></div>
+        <div class="d20" >The Total of all the D20:<br/><span  id="d20total"></span></div>
+        
+    </div>
+<div id="allDice">
+    <div class="d4" >Results of the D4:<br/> <span id="d4"  ></span><br/></div>
+    <div class="d6" >Results of the D6:<br/> <span id="d6"  ></span><br/></div>
+    <div class="d8" >Results of the D8:<br/> <span id="d8"  ></span><br/></div>
+    <div class="d10">Results of the D10:<br/><span  id="d10"></span><br/></div>
+    <div class="d12">Results of the D12:<br/><span  id="d12"></span><br/></div>
+    <div class="d20">Results of the D20:<br/><span  id="d20"></span><br/></div>
+    
+
+
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
