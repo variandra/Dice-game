@@ -122,8 +122,8 @@ function rollEM(){
                     let name = `D${diceSides} rolled:`
                     document.querySelector(`#d${diceSides}`).innerHTML += `${j+1}: ${rollDice} <br/>`;
                     dieRolls.push({[name]: `${rollDice}`});
-                    d6Total += rollDice;
-                    document.querySelector(`#d${diceSides}total`).innerHTML = d6Total;
+                    // d6Total += rollDice;
+                    // document.querySelector(`#d${diceSides}total`).innerHTML = d6Total;
                 }
     
                     // console.log(`Number of dice to roll: ${element.value}`);
